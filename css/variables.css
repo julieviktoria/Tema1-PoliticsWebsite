@@ -1,0 +1,9 @@
+:root {
+	background: #ffffff;
+}
+
+.background-image {
+	background-repeat: no-repeat;
+	background-attachment: absolute;
+	background-size: 100% 100%;
+}
