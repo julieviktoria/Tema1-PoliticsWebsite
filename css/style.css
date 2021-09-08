@@ -278,7 +278,7 @@ h5 {
 	align-items: flex-end;
 }
 
-#navbar .menu li:last-child {
+/* #navbar .menu li:last-child {
 	background: #e2e2e2;
 	border-radius: 40px;
 	width: 250px;
@@ -286,7 +286,7 @@ h5 {
 	letter-spacing: 1px;
 	text-decoration: none !important;
 	cursor: pointer;
-}
+} */
 
 #navbar a:hover {
 	background: #e2e2e2;
