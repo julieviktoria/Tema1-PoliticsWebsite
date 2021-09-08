@@ -8,9 +8,49 @@ body {
 
 .header img {
 	width: 100vw;
-	
 	display: block;
 	margin-left: -8px;
+}
+
+.header .content {
+	position: absolute; 
+	bottom: 0; 
+	background: rgb(0, 0, 0); 
+	background: rgba(0, 0, 0, 0.5); 
+	color: #f1f1f1; 
+	width: 100vw; 
+	height: 15vw;
+	padding: 30px; 
+	margin-left: -8px;
+	margin-bottom: -90px;
+}
+
+.header .content h1 {
+	color: white;
+	font-size: 50px;
+	font-family: "Montserrat", sans-serif;
+	margin-left: 40px;
+}
+
+.header .content p {
+	color: rgb(188, 217, 255);
+	font-size: 25px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: lighter;
+	margin-left: 40px;
+}
+
+.header .content a {
+	text-align: center;
+	margin-left: 40px;
+	font-family: "Montserrat", sans-serif;
+	text-decoration: none !important;
+	background: darkblue;
+	color: white;
+	font-size: 15px;
+	text-transform: uppercase;
+	padding: 20px;
+	border-radius: 30px;
 }
 
 h1 {
@@ -54,15 +94,18 @@ h5 {
 	width: 20vw;
 	position: relative;
 }
-
+.side .bar { 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding-top: 5vw;
+}
 .circular-square {
 	border-radius: 50%;
 	width: 350px;
 	height: 350px;
 	text-align: center;
 	margin: auto;
-	position: absolute;
-	left: 23%;
 }
 
 .side h2 {
@@ -80,18 +123,20 @@ h5 {
 	text-align: center;
 }
 
-.button-side a {
-	text-align: center;
-	position: absolute;
-	left: 15%;
-	bottom: 35%;
+.bar a {
 	font-family: "Montserrat", sans-serif;
 	text-decoration: none !important;
 	background: darkblue;
 	color: white;
 	font-size: 15px;
+	text-transform: uppercase;
+	margin: 40px;
+	margin-left: 15%;
+	margin-right: 15%;
 	padding: 20px;
 	border-radius: 30px;
+	text-align: center;
+
 }
 
 .main {
@@ -110,17 +155,42 @@ h5 {
 	border-bottom: 1px solid black;
 	padding-bottom: 20px;
 	padding-left: 15px;
+	font-size: 30px;
 }
 
 .main .content-text {
 	padding-bottom: 50px;
 }
 
+.column {
+	float: right;
+	width: 30%;
+	padding: 5px;
+}
+
+.column img { 
+	border-radius: 5%;
+}
+
 .main .content-text p {
 	font-family: "Tenor Sans", sans-serif;
-	font-size: 13px;
-	letter-spacing: 2px;
+	font-size: 17px;
+	letter-spacing: 1px;
 	padding: 6px;
+}
+
+.main .content-text a { 
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-family: "Montserrat", sans-serif;
+	text-decoration: none !important;
+	background: darkblue;
+	color: white;
+	font-size: 15px;
+	text-transform: uppercase;
+	padding: 20px;
+	border-radius: 30px;             
 }
 
 #footer {
@@ -197,8 +267,8 @@ h5 {
 	display: inline-block;
 }
 
-#navbar a:nth-child(3) {
-	background: #e2e2e2;
+#navbar a:nth-child(4) {
+	background: #8d5151;
 	border-radius: 40px;
 	width: 250px;
 	color: rgb(0, 0, 0);
