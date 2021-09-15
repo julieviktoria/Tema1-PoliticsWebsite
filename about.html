@@ -10,16 +10,18 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;900&family=Nunito:wght@300&family=Tenor+Sans&display=swap"
 			rel="stylesheet"
 		/>
-
+		<link rel="stylesheet" href="./css/reset.css" />
 		<link rel="stylesheet" href="./css/style.css" />
+
 		<title>Høyre - Vi tror på Norge</title>
 
-		<link rel="icon" href="./assets/images.png" type="image/x-icon" />
+		<link rel="icon" href="./assets/faveicon.svg" type="image/x-icon" />
 	</head>
 	<body>
 		<div id="navbar">
-			<div class="menu">
-				<li><img src="./assets/hoyre-logo.jpg" /></li>
+			<img src="./assets/hoyre-logo.jpg" />
+
+			<ul>
 				<li><a href="./index.html">Politikk</a></li>
 				<li><a href="./about.html#about">Partiet</a></li>
 				<li>
@@ -30,26 +32,23 @@
 					>
 				</li>
 				<li>
-					<a
-						href="https://www.flickr.com/photos/187151665@N04/"
-						target="_blank"
-						>BLI MED</a
-					>
+					<a href="./skjema.html#skjema" id="join-us">BLI MED</a>
 				</li>
-			</div>
+			</ul>
 		</div>
 
-		<header>
-			<div class="header">
-				<img src="./assets/erna-image-1_1136889c23.jpg" alt="header" />
-				<div class="content">
-					<h1>Vi tror på Norge</h1>
-					<p>Vår visjon for Norge er et samfunn med muligheter for alle</p>
-					<a
-						href="https://hoyre.no/politikk/hvorfor-hoyre/ti-gode-grunner-til-a-stemme-hoyre/"
-						>Les ti gode grunner til å stemme Høyre</a
-					>
-				</div>
+		<header class="header">
+			<img
+				src="./assets/erna-image-1_1136889c23.jpg"
+				alt="Bilder av Erna Solberg"
+			/>
+			<div class="content">
+				<h1>Vi tror på Norge</h1>
+				<p>Vår visjon for Norge er et samfunn med muligheter for alle</p>
+				<a
+					href="https://hoyre.no/politikk/hvorfor-hoyre/ti-gode-grunner-til-a-stemme-hoyre/"
+					>Les ti gode grunner til å stemme Høyre</a
+				>
 			</div>
 		</header>
 
@@ -59,28 +58,48 @@
 					<img
 						class="circular-square"
 						src="./assets/hoyre-regnbue.jpg"
-						alt="meg"
+						alt="Høyre "
 					/>
 					<br />
-					<h2>Vi tror på Norge</h2>
-					<h4>
-						Vår visjon for Norge er et samfunn med muligheter for alle.
-					</h4>
+					<h2>Høyres hjertesaker</h2>
+					<h4>Saker i fokus</h4>
 
-					<a
-						href="https://hoyre.no/politikk/hvorfor-hoyre/ti-gode-grunner-til-a-stemme-hoyre/"
-						>Les ti gode grunner til å stemme Høyre</a
+					<img
+						class="circular-square"
+						src="./assets/wes-grant-244yXzOilz0-unsplash-1_159168cda1.jpg"
+						alt="Team Erna"
+					/>
+					<a href="https://hoyre.no/skape-mer-og-inkludere-flere-i-jobb/"
+						>Skape mer og inkludere fler</a
+					>
+
+					<img
+						class="circular-square"
+						src="./assets/helse-toppbilde.jpg"
+						alt="meg"
+					/>
+					<a href="https://hoyre.no/skape-pasientens-helsetjeneste/"
+						>Pasientens helsetjeneste</a
+					>
+
+					<img
+						class="circular-square"
+						src="./assets/undervisning.jpg"
+						alt="meg"
+					/>
+					<a href="https://hoyre.no/kunnskap-i-skolen/"
+						>Kunnskap i skolen</a
 					>
 				</div>
 			</div>
 
-			<div class="main">
-				<h2>Opptatt av klima? Da bør du stemme Høyre</h2>
+			<div class="main" id="about">
+				<h2>Hvorfor stemme Høyre?</h2>
 				<div class="content-text">
 					<div class="column">
 						<img
 							src="./assets/Morogdatter.jpg"
-							alt="Snow"
+							alt="Familie-bilde"
 							style="width: 100%"
 						/>
 					</div>
@@ -106,8 +125,15 @@
 						leo a ipsum placerat tempus.
 					</p>
 				</div>
-				<h2>Dette har vi gjort siden 2013</h2>
+				<h2>Opptatt av klima? Da bør du stemme Høyre</h2>
 				<div class="content-text">
+					<div class="column2">
+						<img
+							src="./assets/Klima-forside-2.jpg"
+							alt="Snow"
+							style="width: 100%"
+						/>
+					</div>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						Suspendisse mattis eleifend auctor. Quisque arcu dui, pharetra
@@ -121,6 +147,7 @@
 						interdum. Proin vitae sollicitudin massa, in fringilla tellus.
 						Nam tortor justo, finibus nec vehicula ut, fermentum id nisi.
 					</p>
+
 					<p>
 						Sed lacus tortor, lacinia faucibus vestibulum id, tincidunt in
 						odio. Duis massa enim, laoreet nec pellentesque at, auctor id
