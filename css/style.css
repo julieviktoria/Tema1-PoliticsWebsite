@@ -6,13 +6,6 @@ body {
 	overflow-x: hidden;
 }
 
-.header img {
-	width: 100vw;
-	
-	display: block;
-	margin-left: -8px;
-}
-
 h1 {
 	color: black;
 }
@@ -35,6 +28,89 @@ h5 {
 	font-weight: lighter;
 }
 
+input, select, textarea {
+	display: block;
+	margin: 10px 0 20px 0; 
+	/* Her gir vi margin på toppen av 10px og bunnen av 20px alt. bruk margin-top: 10px; og margin-bottom: 20px; 
+	Viktig å gi rom til rundt felter for mobil navigering*/
+	padding: 10px;
+	border-radius: 5px;
+  }
+  
+  input[type="checkbox"], input[type="radio"] {
+	display: inline;
+	margin: 0 10px 0 5px;
+  }
+  
+  input[type="submit"] {
+	margin-left: 20px;
+  }
+  
+  select {
+	padding: 5px;
+  }
+  
+  fieldset {
+	margin: 20px;
+  }
+  
+  label {
+	font-size: 16px;
+  }
+
+.header {
+	width: 100%;
+}
+
+.header img {
+	width: 100%;
+}
+
+.header .content {
+	position: absolute;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	color: #f1f1f1;
+	width: 100%;
+	height: 15vw;
+	padding: 30px;
+	margin-bottom: -200px;
+	display: flex;
+	flex-direction: column;
+}
+
+.header .content h1 {
+	color: white;
+	font-size: 50px;
+	font-family: "Montserrat", sans-serif;
+	margin-left: 40px;
+	padding: 1vw;
+}
+
+.header .content p {
+	color: rgb(188, 217, 255);
+	font-size: 25px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: lighter;
+	margin-left: 40px;
+	padding: 1vw;
+}
+
+.header .content a {
+	font-family: "Montserrat", sans-serif;
+	text-decoration: none !important;
+	text-align: center;
+	background: darkblue;
+	color: white;
+	font-size: 15px;
+	text-transform: uppercase;
+	padding: 20px;
+	border-radius: 30px;
+	margin-left: 1.8%;
+	margin-right: 80%;
+	justify-content: flex-start;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -43,8 +119,7 @@ h5 {
 	display: flex;
 	flex-wrap: wrap;
 	margin: auto;
-	width: 100vw;
-	margin-left: -8px;
+	width: 100%;
 }
 
 .side {
@@ -54,15 +129,19 @@ h5 {
 	width: 20vw;
 	position: relative;
 }
-
+.side .bar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding-top: 5vw;
+}
 .circular-square {
 	border-radius: 50%;
-	width: 350px;
-	height: 350px;
+	width: 15vw;
+	height: auto;
 	text-align: center;
 	margin: auto;
-	position: absolute;
-	left: 23%;
+	margin-top: 20px;
 }
 
 .side h2 {
@@ -80,18 +159,19 @@ h5 {
 	text-align: center;
 }
 
-.button-side a {
-	text-align: center;
-	position: absolute;
-	left: 15%;
-	bottom: 35%;
+.bar a {
 	font-family: "Montserrat", sans-serif;
 	text-decoration: none !important;
 	background: darkblue;
 	color: white;
 	font-size: 15px;
+	text-transform: uppercase;
+	margin: 40px;
+	margin-left: 15%;
+	margin-right: 15%;
 	padding: 20px;
 	border-radius: 30px;
+	text-align: center;
 }
 
 .main {
@@ -110,22 +190,58 @@ h5 {
 	border-bottom: 1px solid black;
 	padding-bottom: 20px;
 	padding-left: 15px;
+	font-size: 30px;
 }
 
 .main .content-text {
-	padding-bottom: 50px;
+	padding-bottom: 10%;
+}
+
+.column {
+	float: right;
+	width: 30%;
+	padding: 5px;
+	margin: 1vw;
+}
+
+.column img {
+	border-radius: 5%;
+}
+
+.column2 {
+	float: left;
+	width: 30%;
+	padding: 5px;
+	margin: 1vw;
+}
+
+.column2 img {
+	border-radius: 5%;
 }
 
 .main .content-text p {
 	font-family: "Tenor Sans", sans-serif;
-	font-size: 13px;
-	letter-spacing: 2px;
-	padding: 6px;
+	font-size: 0.8vw;
+	letter-spacing: 1px;
+	margin: 2vw 0;
+}
+
+.main .content-text a {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-family: "Montserrat", sans-serif;
+	text-decoration: none !important;
+	background: darkblue;
+	color: white;
+	font-size: 15px;
+	text-transform: uppercase;
+	padding: 20px;
+	border-radius: 30px;
 }
 
 #footer {
-	width: 100vw;
-	margin-left: -8px;
+	width: 100%;
 	margin-bottom: -15px;
 	background: darkblue;
 	padding: 100px;
@@ -150,46 +266,42 @@ h5 {
 #navbar {
 	background-color: #ffffff;
 	width: 100vw;
-	height: 10%;
-	text-align: right;
-	position: absolute;
-	margin-left: -8px;
-	margin-top: -8px;
 	padding: 8px;
 	padding-bottom: 5px;
 	border-bottom: 0.5px solid gray;
 	box-shadow: 0px, 0px, 10px rgb(0, 0, 0);
+	display: flex;
+	flex-direction: row;
 }
 
 #navbar .menu img {
-	text-align: left;
 	margin-top: 0px;
-	width: 8vw;
+	width: 15vw;
 	overflow: auto;
-	position: absolute;
-	left: 2%;
-	top: 30%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
 }
 
 #navbar li {
+	flex-direction: row;
+	align-items: flex-end;
 	text-decoration: none !important;
 	border: none;
 	display: inline-block;
-	position: relative;
-	right: 2%;
 	overflow: hidden;
-	justify-content: space-between;
 	padding-left: 15px;
 }
 
 #navbar a {
+	align-items: flex-end;
 	background-color: #ffffff;
 	text-align: center;
 	color: rgb(51, 125, 209);
 	margin: 20px;
 	padding: 10px;
 	width: 200px;
-	font-size: 22px;
+	font-size: 1vw;
 	font-family: "Nunito", sans-serif;
 	letter-spacing: -1px;
 	text-decoration: none !important;
@@ -197,12 +309,15 @@ h5 {
 	display: inline-block;
 }
 
-#navbar a:nth-child(3) {
+/* #navbar .menu li:last-child {
 	background: #e2e2e2;
 	border-radius: 40px;
 	width: 250px;
 	color: rgb(0, 0, 0);
-}
+	letter-spacing: 1px;
+	text-decoration: none !important;
+	cursor: pointer;
+} */
 
 #navbar a:hover {
 	background: #e2e2e2;
@@ -213,6 +328,3 @@ h5 {
 	text-decoration: none !important;
 	cursor: pointer;
 }
-
-
-

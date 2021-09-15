@@ -10,9 +10,8 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;900&family=Nunito:wght@300&family=Tenor+Sans&display=swap"
 			rel="stylesheet"
 		/>
-        <link rel="stylesheet" href="./css/reset.css" />
+
 		<link rel="stylesheet" href="./css/style.css" />
-        
 		<title>Høyre - Vi tror på Norge</title>
 
 		<link rel="icon" href="./assets/faveicon.svg" type="image/x-icon" />
@@ -32,7 +31,7 @@
 				</li>
 				<li>
 					<a
-						href="./skjema.html"
+						href="https://www.flickr.com/photos/187151665@N04/"
 						target="_blank"
 						>BLI MED</a
 					>
@@ -96,6 +95,79 @@
 			</div>
 
 			<div class="main">
+
+                <form action="result.html" method="GET">
+                    <fieldset>
+                        <legend>Kontaktopplysninger</legend>
+                        <label for="firstname">Fornavn</label>
+                        <input 
+                            type="text" 
+                            name="firstname" 
+                            id="firstname"
+                            value=""
+                            autocomplete="off"
+                            required>
+        
+                        <label for="familyname">Etternavn</label>
+                        <input 
+                            type="text" 
+                            name="familyname" 
+                            id="familyname"
+                            value="">
+        
+                        <label for="email">Epost</label>
+                        <input 
+                            type="email" 
+                            name="email" 
+                            id="email"
+                            required
+                            value="">
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>Betaling</legend>
+        
+                        <label for="credit-card">Kredittkort</label>
+                        <select name="credit-card" id="credit-card">
+                            <option value="visa">visa</option>
+                            <option value="mastercard">mastercard</option>
+                        </select>
+        
+                        <label for="card-number">Kredittkortnummer</label>
+                        <input 
+                            type="text" 
+                            name="card-number" 
+                            id="card-number"
+                            placeholder="0000 0000 0000 0000"
+                            required
+                            value="">
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>Tilleginformasjon</legend>
+                        <h4>Velg aktiviteter</h4>
+                        <label for="football">Fotball</label> <input type="checkbox" name="football" id="football">
+                        <label for="cinema">Kino</label> <input type="checkbox" name="cinema" id="cinema">
+        
+                        <hr />
+        
+                        <h4>Kjønn</h4>
+                        <label>Mann</label><input type="radio" name="gender">
+                        <label>Kvinne</label><input type="radio" name="gender">
+                        <label>Ikke angitt</label><input type="radio" name="gender">
+        
+                        <hr />
+        
+                        <label>Beskrivelsen</label>
+                        <textarea name="text" placeholder="Skriv text her">
+        
+                        </textarea>
+                    </fieldset>
+                    
+                    <input type="submit" value="send data">
+                </form>
+
+
 				<h2>Hvorfor stemme Høyre?</h2>
 				<div class="content-text">
 					<div class="column">
@@ -168,41 +240,6 @@
 						rutrum. Phasellus ornare egestas placerat. Phasellus ultricies
 						leo a ipsum placerat tempus.
 					</p>
-				</div>
-				<h2>Bli en del av Team Erna!</h2>
-				<div class="content-text">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Suspendisse mattis eleifend auctor. Quisque arcu dui, pharetra
-						eget ultrices ut, feugiat eu lorem. Sed suscipit nulla ut odio
-						condimentum, sed cursus urna consequat. Suspendisse potenti.
-						Curabitur dapibus non augue vel fringilla. Quisque eleifend
-						urna sed tristique commodo. Nam turpis lorem, aliquam et
-						malesuada et, interdum non arcu. In lacinia placerat mi ut
-						maximus. Maecenas elementum commodo elit quis ullamcorper.
-						Morbi rhoncus quis eros in interdum. Vivamus congue tristique
-						interdum. Proin vitae sollicitudin massa, in fringilla tellus.
-						Nam tortor justo, finibus nec vehicula ut, fermentum id nisi.
-					</p>
-					<p>
-						Sed lacus tortor, lacinia faucibus vestibulum id, tincidunt in
-						odio. Duis massa enim, laoreet nec pellentesque at, auctor id
-						ligula. Phasellus rutrum lacus tincidunt arcu pulvinar, vel
-						lobortis sapien porttitor. Aenean quam justo, interdum ut diam
-						hendrerit, viverra pellentesque ex. Nullam et pulvinar dui.
-						Curabitur tristique ullamcorper massa, ac accumsan neque
-						efficitur nec. Suspendisse in velit suscipit sapien
-						scelerisque placerat.
-					</p>
-					<p>
-						In in erat sed ligula vulputate mattis. Interdum et malesuada
-						fames ac ante ipsum primis in faucibus. Phasellus diam ante,
-						mollis ac sollicitudin id, feugiat eu arcu. Fusce scelerisque
-						nisl id tincidunt ultricies. Nam placerat rutrum dolor quis
-						rutrum. Phasellus ornare egestas placerat. Phasellus ultricies
-						leo a ipsum placerat tempus.
-					</p>
-				</div>
 			</div>
 		</div>
 	</body>
