@@ -101,8 +101,9 @@ label {
 	color: rgb(188, 217, 255);
 	font-size: 25px;
 	font-family: "Montserrat", sans-serif;
-	font-weight: lighter;
+	font-weight: light;
 	margin-left: 40px;
+	max-width: 500px;
 	padding: 1vw;
 }
 
@@ -116,6 +117,7 @@ label {
 	text-transform: uppercase;
 	padding: 20px;
 	border-radius: 30px;
+	margin-top: 20px;
 	margin-left: 50px;
 	justify-content: flex-start;
 	max-width: 400px;
@@ -290,7 +292,7 @@ label {
 }
 
 #navbar img {
-	margin: 1.5% 0 0 0;
+	margin: 1.5%;
 	width: 12vw;
 	height: 100%;
 	display: flex;
