@@ -11,7 +11,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./css/reset.css" />
-		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/style-skjema.css" />
 		<title>Høyre - Vi tror på Norge</title>
 
 		<link rel="icon" href="./assets/faveicon.svg" type="image/x-icon" />
@@ -91,32 +91,40 @@
 				<form action="result.html" method="GET">
 					<fieldset>
 						<legend>Kontaktopplysninger</legend>
-						<label for="firstname">Fornavn</label>
-						<input
-							type="text"
-							name="firstname"
-							id="firstname"
-							value=""
-							autocomplete="off"
-							required
-						/>
-
-						<label for="familyname">Etternavn</label>
-						<input
-							type="text"
-							name="familyname"
-							id="familyname"
-							value=""
-						/>
-
-						<label for="email">Epost</label>
-						<input
-							type="email"
-							name="email"
-							id="email"
-							required
-							value=""
-						/>
+						<div class="grid">
+							<label for="firstname" class="grid">Fornavn</label>
+							<input
+								type="text"
+								name="firstname"
+								id="firstname"
+								value=""
+								autocomplete="off"
+								required
+							/>
+						</div>
+						<div class="grid">
+							<label for="familyname">Etternavn</label>
+							<input
+								type="text"
+								name="familyname"
+								id="familyname"
+								value=""
+							/>
+						</div>
+						<div class="grid">
+							<label for="email">Epost</label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								required
+								value=""
+							/>
+						</div>
+						<div class="grid">
+							<label for="number">Telefonnummer</label>
+							<input type="number" name="number" id="number" value="" />
+						</div>
 					</fieldset>
 
 					<fieldset>
@@ -140,7 +148,7 @@
 					</fieldset>
 
 					<fieldset>
-						<legend>Tilleginformasjon</legend>
+						<legend>Tilleggsinformasjon</legend>
 						<h4>Velg aktiviteter</h4>
 						<label for="football">Fotball</label>
 						<input type="checkbox" name="football" id="football" />
