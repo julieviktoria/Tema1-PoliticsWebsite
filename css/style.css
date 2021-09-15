@@ -6,6 +6,10 @@ body {
 	overflow-x: hidden;
 }
 
+html {
+	font-size: 20px;
+}
+
 h1 {
 	color: black;
 }
@@ -60,10 +64,15 @@ input, select, textarea {
 
 .header {
 	width: 100%;
+	position: relative;
+	overflow: hidden;
 }
 
 .header img {
 	width: 100%;
+	height: 100%;
+	bottom: 0;
+	margin-bottom: -5px;
 }
 
 .header .content {
@@ -72,9 +81,7 @@ input, select, textarea {
 	background: rgba(0, 0, 0, 0.5);
 	color: #f1f1f1;
 	width: 100%;
-	height: 15vw;
 	padding: 30px;
-	margin-bottom: -200px;
 	display: flex;
 	flex-direction: column;
 }
@@ -107,8 +114,8 @@ input, select, textarea {
 	padding: 20px;
 	border-radius: 30px;
 	margin-left: 1.8%;
-	margin-right: 80%;
 	justify-content: flex-start;
+	max-width: 400px;
 }
 
 * {
@@ -272,11 +279,13 @@ input, select, textarea {
 	box-shadow: 0px, 0px, 10px rgb(0, 0, 0);
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 }
 
-#navbar .menu img {
-	margin-top: 0px;
+#navbar img {
+	margin-top: 10px;
 	width: 15vw;
+	height: auto;
 	overflow: auto;
 	display: flex;
 	flex-direction: row;
@@ -295,13 +304,12 @@ input, select, textarea {
 
 #navbar a {
 	align-items: flex-end;
-	background-color: #ffffff;
 	text-align: center;
 	color: rgb(51, 125, 209);
 	margin: 20px;
 	padding: 10px;
 	width: 200px;
-	font-size: 1vw;
+	font-size: 20px;
 	font-family: "Nunito", sans-serif;
 	letter-spacing: -1px;
 	text-decoration: none !important;
@@ -319,7 +327,17 @@ input, select, textarea {
 	cursor: pointer;
 } */
 
-#navbar a:hover {
+#navbar a:hover{
+	background: #e2e2e2;
+	border-radius: 40px;
+	width: 250px;
+	color: rgb(0, 0, 0);
+	letter-spacing: 1px;
+	text-decoration: none !important;
+	cursor: pointer;
+}
+
+#join-us {
 	background: #e2e2e2;
 	border-radius: 40px;
 	width: 250px;
